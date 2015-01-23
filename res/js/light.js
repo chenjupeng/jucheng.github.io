@@ -39,5 +39,20 @@ $(document).ready(function() {
             $(this).attr('rel', i)
         })
     });
+    $('.fancybox').fancybox({
+        padding: 7,
+        openEffect: 'fade',
+        closeEffect: 'fade',
+        scrolling: 'no',
+    });
+    // Pictures
+    var images = ["/res/img/bg/01.jpg", "/res/img/bg/02.jpg", "/res/img/bg/03.jpg"];
+    images.sort(function() {
+        return Math.random() > 0.5 ? -1 : 1
+    });
+    $(".sidebar").backstretch(images, {
+        fade: 1500,
+        duration: 15000,
+    })
 });
 

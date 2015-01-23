@@ -1,10 +1,9 @@
-﻿<div class="sidebar">
+<div class="sidebar">
   <div class="profilepic">
-    <a href="/"><img src="{{site.author.logo}}" alt="logo"/></a>
+    <a href="/"><img src="{{ site.author.logo }}" alt="logo"></img></a>
   </div>
   <h1 class="title"><a href="/">{{ site.blog.name }}</a></h1>
   <h2 class="sub-title">{{ site.blog.description }}</h2>
-  <script charset="Shift_JIS" src="http://chabudai.sakura.ne.jp/blogparts/honehoneclock/honehone_clock_tr.js"></script>
   <nav id="nav">
     <ul>
     {% for nav in site.data.nav %}

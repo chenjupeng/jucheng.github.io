@@ -9,9 +9,6 @@ title: 文章分类
 <h2 class="category">分类</h2>
 <div class="category-box">
   <ul>
-  	<li class="category-box-sub">
-  	<a style="color: black" href="#">文章总数 <sup>{{site.posts.size}}</sup></a>
-  	</li>
     {% for item in (0..site.categories.size) %}{% unless forloop.last %}
     {% capture word %}{{ category[item] | strip_newlines }}{% endcapture %}
     <li class="category-box-sub"><a href="#{{ word }}">{{ word }}&nbsp;<sup>{{ site.categories[word].size }}</sup></a></li>
