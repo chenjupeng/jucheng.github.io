@@ -46,11 +46,10 @@ task :post do
   open(filename, 'w') do |post|
     post.puts "---"
     post.puts "layout: post"
-    post.puts "title: \"#{title.gsub(/-/,' ')}\""
-    post.puts "categories: "
-    post.puts "date: #{(ENV['date'] ? Time.parse(ENV['date']) : Time.now).strftime('%Y-%m-%d %H:%M:%S')}"
+    post.puts "title: #{title.gsub(/-/,' ')}"
+    post.puts "category: "
+    post.puts "date: #{date}"
     post.puts "---"
-    post.puts "\n<!-- more -->\n\n\t{% highlight java %}\n\t{% endhighlight %}"
   end
 end
 
