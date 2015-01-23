@@ -1,53 +1,37 @@
-<!DOCTYPE html>
-<html lang="en-US">
-	<head>
-		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-		<meta name="Author" content="Pulpfingers" />
-		<meta name="viewport" content="width=1280" />
-		<!-- <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7, IE=9" /> -->
-	
+---
+layout: null
+---
 
-		<meta charset="UTF-8" />
-		<title> &raquo; Page not found Pulpfingers</title>
-		<link rel="profile" href="http://gmpg.org/xfn/11" />
-		<link rel="pingback" href="http://pulpfingers.com/xmlrpc.php" />
-		<meta name="Keywords" content="Pulpfingers" />
-		<meta name="Description" content="Pulpfingers is a human sized team of developer and designers devoted to create beautiful, useful, features packed apps for the iPhone, iPad & iPod Touch. We are based in Strasbourg, France.
-		" />
-		
-		<link rel="stylesheet" type="text/css" href="http://pulpfingers.com/wp-content/themes/pulpfingers/404.css" media="screen" />
-
-		
-		
-		<link rel='stylesheet' id='contact-form-7-css'  href='http://pulpfingers.com/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=3.3.3' type='text/css' media='all' />
-<script type='text/javascript' src='http://pulpfingers.com/wp-includes/js/jquery/jquery.js?ver=1.8.3'></script>
-<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://pulpfingers.com/xmlrpc.php?rsd" />
-<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://pulpfingers.com/wp-includes/wlwmanifest.xml" /> 
-<meta name="generator" content="WordPress 3.5.1" />
-
-	</head>
-	
-	<body>
-		<div class="container">
-			<!--div id="container_404">
-				<div id="maze">
-					<img src="http://pulpfingers.com/wp-content/themes/pulpfingers/images/maze.png" />
-				</div>
-	
-				<div id="message">
-					<a href="http://cstzhanggj.github.io/"><img src="http://pulpfingers.com/wp-content/themes/pulpfingers/images/404.png" /></a>
-				</div>
-			</div>
-		</div>
-						
-	<script type='text/javascript' src='http://pulpfingers.com/wp-content/plugins/contact-form-7/includes/js/jquery.form.min.js?ver=3.25.0-2013.01.18'></script>
-<script type='text/javascript'>
-/* <![CDATA[ */
-var _wpcf7 = {"loaderUrl":"http:\/\/pulpfingers.com\/wp-content\/plugins\/contact-form-7\/images\/ajax-loader.gif","sending":"Sending ..."};
-/* ]]> */
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <link rel="icon" href="/res/img/favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="/res/img/favicon.ico" type="image/x-icon">
+  <title>找不到页面了...</title>
+  <link rel="stylesheet" href="/res/css/404.css">
+  {% include tongji.html %}
+</head>
+<body>
+  <div id="container">
+    <img src="/res/img/404/404.png" class="png"/>
+  </div>
+  <div class="tips">
+    <p>找不到页面了...</p>
+    <p>一定是你打开方式不对...</p>
+    <p id="view"/>
+  </div>
+  <div id="cloud" class="png"></div>
+</body>
+<script>
+  var t = 5;
+  setInterval("testTime()", 1000);
+  function testTime() {
+    view.innerHTML = t + " 秒后跳转至首页...";
+    if(t == 0) {
+      location="{{ site.blog.url }}";
+    }
+    t--;
+  }
 </script>
-<script type='text/javascript' src='http://pulpfingers.com/wp-content/plugins/contact-form-7/includes/js/scripts.js?ver=3.3.3'></script-->
-<script type="text/javascript" src="http://www.qq.com/404/search_children.js" charset="utf-8"></script>	
-	</body>
 </html>
-		
