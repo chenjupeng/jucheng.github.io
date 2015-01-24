@@ -1,4 +1,4 @@
-markdown: kramdown
+﻿markdown: kramdown
 highlighter: pygments
 permalink: blog/:year/:month/:day/:title.html
 paginate: 6
@@ -9,7 +9,7 @@ blog:
     description: 再好的东西也有失去的一天,再深的记忆也有淡忘的一天                                        # 博客描述
     title: jucheng                                              # 网页标题
     url: http://jucheng.github.io                                                # 博客地址
-    duoshuo:                                             # 多说ID
+    duoshuo:     jucheng                                        # 多说ID
     tongji:                                              # 百度统计ID
     qiniu:                                               # 七牛云地址
 author:
