@@ -10,7 +10,7 @@ blog:
     title: jucheng                                              # 网页标题
     url: http://jucheng.github.io                                                # 博客地址
     duoshuo:     jucheng                                        # 多说ID
-    tongji:                                              # 百度统计ID
+    tongji:    921c5738feea196e168fcb377c0ee843                                          # 百度统计ID
     qiniu:                                               # 七牛云地址
 author:
     name: jucheng                                               # 作者名称
